@@ -3,7 +3,9 @@
   - [2048](https://nikoohp.github.io/demos/2048/index.html)
   - [alert弹窗](https://nikoohp.github.io/demos/alert/index.html)
   - [无缝滚动](https://nikoohp.github.io/demos/marquee/index.html)
-  - ![模拟APP验证码输入][github]
+  - 模拟APP验证码输入
+
+    ![模拟APP验证码输入][github]
 
     [github]: https://nikoohp.github.io/images/APP-sms-code-input.png "模拟APP验证码输入"
   - [日历(未完成)](https://nikoohp.github.io/demos/calendar/index.html)
