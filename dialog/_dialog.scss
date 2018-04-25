@@ -1,0 +1,110 @@
+$button-color: #e0aa54;
+$success-color: #09bb07;
+$warning-color: #fbc550;
+
+.icon-success::before {
+  content: '\e614';
+}
+
+.icon-warning::before {
+  content: '\e601';
+}
+
+.icon-close::before {
+  content: '\e643';
+}
+
+.dialog--modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .25);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .dialog--{
+    &wrapper {
+      position: relative;
+      width: 450px;
+      padding: 30px 26px;
+      color: #8390a3;
+      text-align: center;
+      font-size: 14px;
+      background-color: #fff;
+      transition: all 0.1s cubic-bezier(0.43, 0.14, 0.34, 1.6);
+      transform: translateY(-150px);
+      opacity: 0;
+      @media screen and (max-width: 576px) {
+        width: 100%;
+        padding: 15px;
+      }
+    }
+    &show {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    &close {
+      position: absolute;
+      right: 0;
+      top: 0;
+      padding: 5px;
+      cursor: pointer;
+    }
+    &status {
+      .dgd-icon {
+        font-size: 36px;
+      }
+      .icon-success {
+        color: $success-color;
+      }
+      .icon-warning {
+        color: $warning-color;
+      }
+    }
+    &content {
+      font-size: 16px;
+      line-height: 2;
+      font-weight: bold;
+      margin: 20px 0;
+    }
+    &separate {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      &::before,
+      &::after {
+        content: ' ';
+        display: inline-block;
+        height: 1px;
+        flex: 1;
+        background-color: #e6eaef;
+        margin: 0 6px;
+      }
+    }
+    &buttons {
+      margin-top: 28px;
+    }
+    &button {
+      border: none;
+      outline: none;
+      width: 126px;
+      margin: 0 8px;
+      line-height: 32px;
+      text-align: center;
+      cursor: pointer;
+      &.button--bg {
+        color: #ffffff;
+        background-color: $button-color;
+      }
+      &.button--no-bg {
+        color: inherit;
+        border: 1px solid #eaeaea;
+        background-color: transparent;
+      }
+    }
+  }
+}

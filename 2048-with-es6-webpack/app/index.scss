@@ -1,0 +1,112 @@
+$m-grid-width: 96vw;
+$pad-width: 2.6666666666666665vw;
+$m-number-cell-width: ($m-grid-width - 5 * $pad-width) / 4;
+html,
+body {
+  margin: 0;
+  font-family: '微软雅黑';
+  font-size: 14px;
+  background-color: #f1f1f1;
+  color: #333;
+  @media screen and (max-width: 767px) {
+    height: 100vh;
+    overflow: hidden;
+  }
+}
+
+button {
+  outline: none;
+}
+
+header {
+  width: 500px;
+  margin: 0 auto;
+  text-align: center;
+  @media screen and (max-width: 767px) {
+    width: 100%;
+  }
+  h1 {
+    font-size: 60px;
+    font-weight: bold;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 10px;
+      font-size: 40px;
+    }
+  }
+  .button {
+    width: 100px;
+    padding: 10px;
+    background-color: #8f7a66;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .2s;
+    &:hover {
+      background-color: #9f8b77;
+    }
+  }
+  .score {
+    font-size: 25px;
+    @media screen and (max-width: 767px) {
+      margin-bottom: 0;
+    }
+    span {
+      color: #EC0E0E;
+    }
+  }
+}
+
+main {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  margin: 50px auto;
+  @media screen and (max-width: 767px) {
+    width: $m-grid-width;
+    height: $m-grid-width;
+    margin: 20px auto;
+  }
+  .grid-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    background-color: #bbada0;
+    border-radius: 10px;
+    box-sizing: border-box;
+    @media screen and (max-width: 767px) {
+      padding: $pad-width;
+    }
+  }
+  .number-container{
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+  }
+  .grid-cell,
+  .number-cell {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #ccc0b3;
+    border-radius: 6px;
+    @media screen and (max-width: 767px) {
+      width: $m-number-cell-width;
+      height: $m-number-cell-width;
+    }
+  }
+  .number-cell {
+    line-height: 100px;
+    font-size: 45px;
+    text-align: center;
+    font-weight: 700;
+    @media screen and (max-width: 767px) {
+      line-height: $m-number-cell-width;
+    }
+  }
+}
