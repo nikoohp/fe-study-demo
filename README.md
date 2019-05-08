@@ -8,7 +8,7 @@
     ![模拟APP验证码输入][github]
 
     [github]: https://nikoohp.github.io/images/APP-sms-code-input.png "模拟APP验证码输入"
-  - [日历(未完成)](https://nikoohp.github.io/demos/calendar/index.html)
+  - [日历(未完成)](https://nikoohp.github.io/demos/calendar/calendar.html)
   - [tab切换](https://nikoohp.github.io/demos/tab/index.html)
   - [canvas圆形进度条](https://nikoohp.github.io/demos/canvasLoading/index.html)
   - [dialog弹窗](https://nikoohp.github.io/demos/dialog/index.html)
